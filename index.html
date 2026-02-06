@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS – Example 01 H</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div id="dummy" class="header-banner">
+            <div class="text-2xl text-gray-800">Logo <strong>Here</strong></div>
+        </div>
+        <div id="real" class="header-banner z-50 fixed">
+            <div class="container flex justify-between items-center">
+                <div class="text-2xl text-gray-800">Logo <strong>Here</strong></div>
+                <button id="menuButton" class="inline-block md:hidden"
+                    data-target="#drop-menu">
+                    <div class="flex">
+                    <img id="menuButtonImg" class=""
+                        src="assets/menu.svg" alt="Menu" 
+                        style="width:30px;height:30px;">
+                    <img id="menuCloseButtonImg" class="is-hidden"
+                        src="assets/close_menu.svg" alt="Close menu" 
+                        style="width:30px;height:30px;">
+                    </div>
+                </button>             
+                <nav class="hidden md:block">
+                    <ul class="menu">
+                        <li class="menu-item font-bold"><a href="#">Home</a></li>
+                        <li class="menu-item"><a href="#">About us</a></li>
+                        <li class="menu-item"><a href="#">Gallery</a></li>
+                        <li class="menu-item"><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="drop-menu" class="drop-menu bg-amber-500 py-6 z-40">
+            <nav>
+                <ul class="menu flex-col">
+                    <li class="menu-item font-bold"><a href="#">Home</a></li>
+                    <li class="menu-item"><a href="#">About us</a></li>
+                    <li class="menu-item"><a href="#">Gallery</a></li>
+                    <li class="menu-item"><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero" 
+            class="relative bg-cover min-h-80 text-white flex items-center justify-between text-center"
+            style="background-image: url('assets/hero.png');">
+            <div class="absolute inset-0 z-0 bg-gray-800/5"></div>
+            <div class="container relative z-10">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black uppercase mb-4">Title goes here</h1>
+                <h2 class="text-2xl lg:text-3xl xl:text-4xl font-medium mb-8">They all lived happily ever after</h2>
+                <a href="#" class="button">Call to action</a>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 1</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 2</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 3</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 4</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 5</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 6</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 7</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 8</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 9</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 10</div>
+        </section>
+        <section>
+            <div class="text-8xl text-gray-200">Text Block 11</div>
+        </section>
+    </div>
+    <footer>
+        <div id="dummy" class="footer-banner">
+            <div class="container text-2xl lg:text-3xl flex justify-between items-center">
+                <div>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+        </div>
+        <div id="real" class="footer-banner z-50 fixed">
+            <div class="container text-2xl lg:text-3xl flex justify-between items-center">
+                <div>
+                    <span>Tailwind CSS - </span>
+                </div>
+                <div>
+                    <span>Example 01</span>
+                    <span>Example 02</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
